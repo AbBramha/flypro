@@ -79,16 +79,16 @@ export default function Hero({ fleetOpen, menuOpen }: HeroProps) {
           </motion.div>
 
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'normal', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>THE SKY</motion.div>
+            <motion.div className="high-contrast" variants={textVariants} style={{ fontStyle: 'normal', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>THE SKY</motion.div>
           </div>
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'italic', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>IS YOURS.</motion.div>
+            <motion.div className="high-contrast" variants={textVariants} style={{ fontStyle: 'italic', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>IS YOURS.</motion.div>
           </div>
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'normal', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>CLAIM IT</motion.div>
+            <motion.div className="high-contrast" variants={textVariants} style={{ fontStyle: 'normal', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>CLAIM IT</motion.div>
           </div>
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'italic', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>NOW.</motion.div>
+            <motion.div className="high-contrast" variants={textVariants} style={{ fontStyle: 'italic', fontSize: 'clamp(32px, 8vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.02em', textTransform: 'uppercase', color: 'white', textShadow: '0 4px 32px rgba(0,0,0,0.35)' }}>NOW.</motion.div>
           </div>
 
           <motion.div variants={textVariants} style={{

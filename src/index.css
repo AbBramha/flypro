@@ -272,7 +272,7 @@ select:-webkit-autofill {
 }
 
 /* Global ultra-high contrast shadow for all large text */
-h2, .hero-title-text, div[style*="font-size: clamp(48px"] {
+h2, .high-contrast {
   text-shadow: 0px 0px 12px rgba(0,0,0,1), 0px 4px 32px rgba(0,0,0,0.9) !important;
   -webkit-text-stroke: 1.5px rgba(0,0,0,0.6) !important;
 }
