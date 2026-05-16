@@ -71,6 +71,18 @@ html, body {
   transform: translateY(-2px);
 }
 
+/* TACTICAL GREY-BLACK GLASS */
+.tactical-glass {
+  background: rgba(15, 15, 18, 0.75) !important;
+  backdrop-filter: blur(24px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.8), 0 1px 0 rgba(255, 255, 255, 0.04) inset !important;
+}
+.tactical-glass:hover {
+  background: rgba(20, 20, 25, 0.85) !important;
+}
+
 /* CARD — for white/light section contexts */
 .card {
   background: white;

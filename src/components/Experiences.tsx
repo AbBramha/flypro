@@ -44,7 +44,7 @@ export default function Experiences() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12, duration: 0.6, ease: [0.19,1,0.22,1] as any }}
-              className="glass-card"
+              className="glass-card tactical-glass"
               style={{ padding: '24px 28px' }}
             >
               <div style={{ fontSize: '8px', letterSpacing: '0.3em', color: 'rgba(147,197,253,0.7)', marginBottom: '8px' }}>

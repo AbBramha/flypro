@@ -27,7 +27,7 @@ export default function Academy() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px', marginTop: '48px' }}>
           {modules.map((m, i) => (
-            <div key={i} className="glass-mid" style={{ padding: '28px 28px 24px', borderRadius: '4px' }}>
+            <div key={i} className="glass-mid tactical-glass" style={{ padding: '28px 28px 24px', borderRadius: '4px' }}>
               <div style={{ fontSize: '64px', color: 'rgba(255,255,255,0.08)', lineHeight: 1, marginBottom: '-8px' }}>{m.num}</div>
               <div style={{ fontSize: '8px', letterSpacing: '0.35em', color: 'rgba(147,197,253,0.6)', marginBottom: '10px' }}>MODULE</div>
               <div style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'white', marginBottom: '8px' }}>{m.title}</div>
