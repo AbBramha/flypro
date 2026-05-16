@@ -238,8 +238,10 @@ select:-webkit-autofill {
     display: none !important;
   }
   
-  /* Make the main navbar pill take up less space */
+  /* Align the main navbar pill to the left and reduce padding */
   .navbar-pill {
+    left: 20px !important;
+    transform: none !important;
     padding: 0 4px !important;
   }
 
