@@ -18,10 +18,10 @@ export default function Experiences() {
         position: 'relative',
         zIndex: 10,
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
         minHeight: '100vh',
         padding: 'clamp(80px,10vw,140px) clamp(24px,6vw,96px)',
-        gap: '80px',
+        gap: 'clamp(32px, 6vw, 80px)',
         alignContent: 'center'
       }}>
         <div>

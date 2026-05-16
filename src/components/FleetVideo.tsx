@@ -29,7 +29,7 @@ export default function FleetVideo({ videoSrc, name, specs, delay, isOpen }: Fle
             <h3 style={{ fontSize: 'clamp(28px,2.5vw,44px)', color: 'white', letterSpacing: '-0.01em', marginBottom: '20px', margin: 0 }}>
               {name}
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '16px' }}>
               {specs.map((spec, i) => (
                 <div key={i}>
                   <div style={{ fontSize: '8px', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.3em', marginBottom: '4px' }}>{spec.label}</div>

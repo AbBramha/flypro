@@ -9,7 +9,7 @@ export default function Footer() {
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(5,10,20,0.75) 0%, rgba(5,10,20,0.82) 100%)' }} />
 
       <div style={{ position: 'relative', zIndex: 10, padding: 'clamp(64px,8vw,100px) clamp(24px,6vw,96px)' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr 1fr', gap: '80px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'clamp(32px, 6vw, 80px)' }}>
           
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>

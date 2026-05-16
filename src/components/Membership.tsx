@@ -11,7 +11,7 @@ export default function Membership() {
         SELECT YOUR TIER.
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'clamp(32px, 6vw, 80px)', alignItems: 'start' }}>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           

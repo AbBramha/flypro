@@ -30,7 +30,7 @@ export default function JetSpecs() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1px', background: 'rgba(255,255,255,0.05)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1px', background: 'rgba(255,255,255,0.05)' }}>
           {jets.map((jet, i) => (
             <motion.div 
               key={jet.id}
@@ -54,7 +54,7 @@ export default function JetSpecs() {
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '32px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', marginBottom: '32px' }}>
                 <div>
                   <div style={{ fontSize: '8px', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.4)', marginBottom: '4px' }}>LENGTH</div>
                   <div style={{ fontSize: '12px', color: 'white' }}>{jet.length}</div>

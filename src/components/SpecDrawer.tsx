@@ -40,7 +40,7 @@ export default function SpecDrawer({ jet, onClose }: SpecDrawerProps) {
           <p style={{ fontSize: '11px', lineHeight: 1.8, color: 'rgba(12,12,14,0.6)', textTransform: 'none' }}>{jet.description}</p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(24px, 4vw, 48px)' }}>
           {jet.specs.map((cat, i) => (
             <div key={i}>
               <div style={{ fontSize: '8px', letterSpacing: '0.35em', color: 'rgba(12,12,14,0.3)', marginBottom: '20px', borderBottom: '1px solid rgba(12,12,14,0.06)', paddingBottom: '8px' }}>{cat.category}</div>

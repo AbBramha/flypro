@@ -62,7 +62,7 @@ export default function MembershipPage({ isOpen, onClose }: MembershipPageProps)
 
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', padding: 'clamp(32px,4vw,48px)', borderTop: '1px solid rgba(12,12,14,0.07)', gap: '24px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', padding: 'clamp(32px,4vw,48px)', borderTop: '1px solid rgba(12,12,14,0.07)', gap: '24px' }}>
         {["PRIVATE HANGARS", "CAPTAIN ON CALL", "GLOBAL SLOTS", "CATERING"].map((p, i) => (
           <div key={i}>
             <div style={{ fontSize: '24px', color: 'var(--accent)', marginBottom: '16px' }}>·</div>

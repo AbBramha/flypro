@@ -25,7 +25,7 @@ export default function Academy() {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '16px', marginTop: '48px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px', marginTop: '48px' }}>
           {modules.map((m, i) => (
             <div key={i} className="glass-mid" style={{ padding: '28px 28px 24px', borderRadius: '4px' }}>
               <div style={{ fontSize: '64px', color: 'rgba(255,255,255,0.08)', lineHeight: 1, marginBottom: '-8px' }}>{m.num}</div>

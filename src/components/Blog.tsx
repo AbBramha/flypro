@@ -17,7 +17,7 @@ export default function Blog({ isOpen, onClose }: BlogProps) {
   return (
     <PageOverlay isOpen={isOpen} onClose={onClose} pageName="JOURNAL">
       
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: '480px', marginBottom: 0 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', minHeight: '480px', marginBottom: 0 }}>
         <div style={{ background: 'linear-gradient(135deg, #1c2d45, #2a4a73)', padding: 'clamp(48px,6vw,80px)', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
             <span style={{ fontSize: '8px', letterSpacing: '0.3em', background: 'var(--accent)', padding: '4px 8px', borderRadius: '2px' }}>FEATURED</span>
@@ -39,7 +39,7 @@ export default function Blog({ isOpen, onClose }: BlogProps) {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '24px', padding: 'clamp(40px,5vw,64px)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px', padding: 'clamp(40px,5vw,64px)' }}>
         {articles.map((a, i) => (
           <motion.div
             key={i}

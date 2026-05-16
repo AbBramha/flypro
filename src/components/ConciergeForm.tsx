@@ -1,7 +1,7 @@
 export default function ConciergeForm() {
   return (
     <section style={{ background: 'white', padding: 'clamp(80px,10vw,140px) clamp(24px,6vw,96px)' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'clamp(32px, 6vw, 80px)', alignItems: 'start' }}>
         
         <div>
           <div style={{ fontSize: '10px', letterSpacing: '0.3em', color: 'var(--accent)', marginBottom: '16px' }}>CONCIERGE</div>
@@ -18,7 +18,7 @@ export default function ConciergeForm() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
             <div className="form-group">
               <label style={{ fontSize: '8px', letterSpacing: '0.2em', color: 'rgba(12,12,14,0.4)', display: 'block', marginBottom: '12px' }}>FULL NAME</label>
               <input type="text" placeholder="GIOVANNI MARCHETTI" style={{ width: '100%', border: 'none', borderBottom: '1px solid rgba(12,12,14,0.1)', padding: '12px 0', fontSize: '11px', outline: 'none', background: 'transparent' }} />

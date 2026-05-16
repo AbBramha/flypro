@@ -9,11 +9,11 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
   return (
     <PageOverlay isOpen={isOpen} onClose={onClose} pageName="ABOUT">
       
-      <div style={{ display: 'grid', gridTemplateColumns: '0.6fr 1fr', padding: 'clamp(48px,6vw,80px)', gap: '80px', alignItems: 'center' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', padding: 'clamp(48px,6vw,80px)', gap: 'clamp(32px, 6vw, 80px)', alignItems: 'center' }}>
         <h2 style={{ fontSize: 'clamp(40px,6vw,80px)', color: '#0c0c0e', fontWeight: 400, lineHeight: 0.95, marginBottom: '24px', margin: 0 }}>
           FIFTY YEARS IN THE SKY.
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'clamp(20px, 4vw, 40px)' }}>
           <div>
             <div style={{ fontSize: '32px', color: 'var(--accent)', marginBottom: '8px' }}>50+</div>
             <div style={{ fontSize: '10px', letterSpacing: '0.2em', color: 'rgba(12,12,14,0.5)' }}>YEARS OF EXCELLENCE</div>
@@ -33,7 +33,7 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', padding: 'clamp(32px,4vw,48px)', borderTop: '1px solid rgba(12,12,14,0.07)', gap: '40px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', padding: 'clamp(32px,4vw,48px)', borderTop: '1px solid rgba(12,12,14,0.07)', gap: 'clamp(20px, 4vw, 40px)' }}>
         {["DISCRETION", "PRECISION", "HERITAGE", "ADVENTURE"].map((v, i) => (
           <div key={i} style={{ borderTop: '2px solid var(--accent)', paddingTop: '20px' }}>
             <div style={{ fontSize: '12px', letterSpacing: '0.15em', color: '#0c0c0e', marginBottom: '12px' }}>{v}</div>

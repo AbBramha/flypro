@@ -19,7 +19,7 @@ export default function JourneysPage({ isOpen, onClose }: JourneysPageProps) {
   return (
     <PageOverlay isOpen={isOpen} onClose={onClose} pageName="JOURNEYS">
       
-      <div style={{ padding: 'clamp(48px,6vw,80px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'end' }}>
+      <div style={{ padding: 'clamp(48px,6vw,80px)', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'clamp(32px, 6vw, 80px)', alignItems: 'end' }}>
         <h2 style={{ fontSize: 'clamp(36px,5vw,72px)', margin: 0, fontWeight: 400, color: '#0c0c0e', lineHeight: 0.95 }}>
           THE WORLD'S FINEST CITIES.<br/>YOUR FLIGHT PATH.
         </h2>
