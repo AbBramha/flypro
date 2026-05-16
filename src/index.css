@@ -218,3 +218,30 @@ select:-webkit-autofill {
 /* TESTIMONIALS SCROLL SNAP */
 .testimonial-rail > * { scroll-snap-align: start; }
 @media (max-width: 768px) { .testimonial-rail { flex-direction: column; overflow-x: visible; } }
+
+/* --- MOBILE SPECIFIC OVERRIDES --- */
+@media (max-width: 900px) {
+  /* Hide the middle navigation links in the top pill so they don't overlap the MENU button */
+  .header-links {
+    display: none !important;
+  }
+  
+  /* Make the main navbar pill take up less space */
+  .navbar-pill {
+    padding: 0 4px !important;
+  }
+
+  /* Make sure background videos crop properly on vertical phone screens */
+  video {
+    object-position: center center !important;
+  }
+
+  /* Shift the Cookie Consent banner up slightly so it doesn't cover the JOIN button */
+  .cookie-banner {
+    bottom: 84px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: calc(100vw - 48px) !important;
+    text-align: center;
+  }
+}

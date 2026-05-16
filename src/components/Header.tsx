@@ -50,7 +50,7 @@ export default function Header({
         <span style={{ fontSize: '16px', letterSpacing: '0.28em', color: '#0c0c0e' }}>FLYPRO</span>
       </div>
 
-      <div style={{ display: 'flex', height: '100%' }}>
+      <div className="header-links" style={{ display: 'flex', height: '100%' }}>
         {[
           { label: 'JOURNEYS', handler: onJourneysOpen },
           { label: 'FLEET', handler: onFleetOpen },
