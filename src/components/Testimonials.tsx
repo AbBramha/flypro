@@ -35,7 +35,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.07, duration: 0.6, ease: [0.19,1,0.22,1] }}
+              transition={{ delay: i * 0.07, duration: 0.6, ease: [0.19,1,0.22,1] as any }}
               style={{ 
                 flexShrink: 0, 
                 width: 'clamp(280px,30vw,380px)', 

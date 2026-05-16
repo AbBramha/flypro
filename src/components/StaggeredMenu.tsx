@@ -75,7 +75,7 @@ export default function StaggeredMenu({ isOpen, onToggle, onFleetOpen }: Stagger
             { label: 'ACADEMY', action: onToggle },
             { label: 'CONTACT', action: onToggle }
           ].map((item, i) => (
-            <li key={item.label} ref={el => navItemsRef.current[i] = el}>
+            <li key={item.label} ref={el => { navItemsRef.current[i] = el }}>
               <a onClick={item.action}>{item.label}</a>
             </li>
           ))}

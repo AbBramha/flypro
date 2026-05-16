@@ -38,7 +38,7 @@ export default function Academy() {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${m.pct}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.2, delay: i * 0.1, ease: [0.19,1,0.22,1] }}
+                    transition={{ duration: 1.2, delay: i * 0.1, ease: [0.19,1,0.22,1] as any }}
                     style={{ height: '100%', background: 'var(--accent)' }}
                   />
                 </div>

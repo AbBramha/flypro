@@ -16,7 +16,7 @@ export default function PageOverlay({ isOpen, onClose, pageName, children }: Pag
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 16 }}
-          transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+          transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] as any }}
           style={{
             position: 'fixed', inset: 0, zIndex: 200,
             backgroundColor: 'var(--bg-base)', overflowY: 'auto'

@@ -27,7 +27,7 @@ export default function SpecDrawer({ jet, onClose }: SpecDrawerProps) {
         initial={{ x: '100%' }}
         animate={{ x: 0 }}
         exit={{ x: '100%' }}
-        transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
+        transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] as any }}
         style={{ position: 'relative', width: 'clamp(320px, 40vw, 600px)', height: '100%', background: 'white', overflowY: 'auto', padding: '80px clamp(24px, 5vw, 60px)' }}
       >
         <button onClick={onClose} style={{ position: 'absolute', top: '32px', left: '32px', background: 'none', border: 'none', fontSize: '11px', letterSpacing: '0.2em', cursor: 'pointer', color: 'rgba(12,12,14,0.4)' }}>

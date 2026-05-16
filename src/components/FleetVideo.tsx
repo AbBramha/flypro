@@ -15,7 +15,7 @@ export default function FleetVideo({ videoSrc, name, specs, delay, isOpen }: Fle
         <motion.div
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
-          transition={{ duration: 0.9 + delay, ease: [0.19,1,0.22,1] }}
+          transition={{ duration: 0.9 + delay, ease: [0.19,1,0.22,1] as any }}
           style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
         >
           <video 
